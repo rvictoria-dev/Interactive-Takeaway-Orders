@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=width-device, initial-scale=1.0" />
+
+    <title>Interactive Takeaway Orders</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="panel">
+      <div class="heading">
+        <h3>Today's Orders</h3>
+        <span>3 LIVE</span>
+      </div>
+
+      <div class="list">
+        <div class="order">
+          <span class="num">#01</span>
+          <div class="info">
+            <strong>James &#183; £18.50</strong>
+            <small>2x Burger, 1x Fries</small>
+          </div>
+          <button>Preparing</button>
+        </div>
+
+        <div class="order">
+          <span class="num">#02</span>
+          <div class="info">
+            <strong>Sarah &#183; £24.00</strong>
+            <small>1x Pizza, 2x Drinks</small>
+          </div>
+          <button>Preparing</button>
+        </div>
+
+        <div class="order">
+          <span class="num">#03</span>
+          <div class="info">
+            <strong>Alex &#183; £12.90</strong>
+            <small>1x Wrap, 1x Chips</small>
+          </div>
+          <button>Preparing</button>
+        </div>
+
+        <div class="foot">
+          <span>Completed: <b id="completed">0</b></span>
+          <span>Tap to update status</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
