@@ -1,4 +1,13 @@
 const buttons = document.querySelectorAll(".order button");
+const completed = document.querySelector("#completed");
+const live = document.querySelector("#live");
+
+function updateCounters() {
+  const done = document.querySelectorAll("button.done").length;
+  completed.textContent = done;
+  live.textContent = `${buttons.length - done} LIVE`;
+}
+
 buttons.forEach((btn) => {
   btn.onclick = () => {
     if (btn.classList.contains("done")) {
@@ -12,7 +21,6 @@ buttons.forEach((btn) => {
       btn.textContent = "ready";
     }
 
-    document.querySelector("#completed").textContent =
-      document.querySelectorAll("button.done").length;
+    updateCounters();
   };
 });
