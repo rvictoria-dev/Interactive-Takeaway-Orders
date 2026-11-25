@@ -59,7 +59,7 @@ click → class and text change → update of the `Completed` and `LIVE` counter
 ### 🖿 Project structure
 
 ```
-Interactive-Takeaway-Orders/
+interactive-takeaway-orders/
 ├── index.html
 ├── style.css
 ├── script.js
